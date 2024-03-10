@@ -1,0 +1,77 @@
+body {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, rgb(93, 0, 255) 0%, rgb(0, 68, 255) 25%, rgb(0, 123, 255) 51%, #c77af3 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 5s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+main {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: rgb(101, 79, 241);
+    padding: 0px;
+    margin-left: 10px;
+    overflow: hidden;
+    border-color: rgb(208, 207, 207);
+    border-radius: 14px;
+    border-width: 5px;
+    border-style: double;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+
+}
+
+.navbar a:hover {
+    background-color: rgb(96, 0, 164);
+}
+
+.navbar li {
+    float: left;
+}

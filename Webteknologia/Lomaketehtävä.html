@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lomake-esimerkki</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>Contact information:</legend>
+        <form action="/koodi.php">
+            <table>
+                <tr>
+                    <td><label for="fname">First name:</label></td>
+                    <td><input type="text" id="fname" name="fname" value=""></td>
+                    <td> Preferred contact method:</td>
+                </tr>
+
+                <tr>
+                    <td><label for="lname">Last name:</label></td>
+                    <td><input type="text" id="lname" name="lname" value=""></td>
+                    <label type="lNameMail"></label>
+                    <td><input type="checkbox" id="lNameMail" name="lNameMail">Email </td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="text" id="email" name="email" value=""></td>
+                    <label type="TeleCheck"></label>
+                    <td><input type="checkbox" id="TeleCheck" name="TeleCheck">Telephone</td>
+                </tr>
+
+                <tr>
+                    <td><label for="telephone">Telephone</label></td>
+                    <td><input type="text" id="telephone" name="telephone" value=""></td>
+                </tr>
+            </table>
+    </fieldset>
+    <fieldset>
+        <legend>Feedback:</legend>
+        Message subject:
+        <label for="FeedText1"></label>
+        <input type="text" id="FeedText1" name="FeedText1" value=""><br>
+
+        <textarea name="message" rows="10" cols="40"></textarea><br>
+
+        <p>Attatch a file:
+            <button type="button" onclick="alert('Choose file')">Choose flie</button><br>
+            <button type="button" onclick="alert('Send')">Send</button>
+    </fieldset>
+    </form>
+</body>
