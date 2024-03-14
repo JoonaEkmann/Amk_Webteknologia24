@@ -1,0 +1,14 @@
+.tilaus {
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+    padding: 15px;
+    border-color: rgb(208, 207, 207);
+    border-radius: 14px;
+    border-width: 5px;
+    border-style: double;
+}
+
+.col {
+    text-align: start;
+}
